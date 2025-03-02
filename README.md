@@ -1,4 +1,4 @@
 # html-css
  Primeiros passos
 
- Começando a aprender criar sitem em HTML5 e CSS3
+Aprendedndo a criar sites em HTML5 e CSS3
