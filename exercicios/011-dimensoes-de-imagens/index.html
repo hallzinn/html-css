@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body><h1>imagens dinâmicas</h1>
+    <p>
+        tente abrir este site em dispositivos diferentes ou aumente e diminua o tamanho do navegador 
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-media.png" type="image/png">
+        <img src="imagens/foto-grande.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>
+        aprendendo a reproduzir audios:
+    </p>
+    <audio src="midia/musica.mp3" controls autoplay></audio>
+    <p>
+        existem navegadores que nao sao compativeis com mp3, por isto deve-se criar outra tag e adicionar outros formatos de audio, assim como foi feito a baixo:
+    </p>
+    <h1>tag para audio</h1> 
+    <p>
+        preload="auto" faz com que o site fique mais pesado, pois o audio é carregado antes de ser reproduzido e audios sao arquivos pesados.
+    </p>
+    <p>
+        preload="metadata" carrega algumas informações do audio, como duração, autor, etc.
+    </p>
+    <p>
+        preload="none" nao carrega o audio, apenas quando o usuario clicar no botao play.
+    </p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.ogg" type="audio/ogg">
+        <source src="midia/musica.wav" type="audio/wav">
+        <p>
+            infelizmente nao foi possivel reproduzir o audio.
+            <a href="midia/musica.mp3">clique aqui para baixar o arquivo mp3</a> 
+        </p>
+    </audio>
+    
+</body>
+</html>

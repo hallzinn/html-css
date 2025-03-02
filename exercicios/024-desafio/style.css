@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}    
+:root{
+    --cor1: #3DDB84;
+    --cor2: #51A878;
+    --cor3: #507561;
+    --cor4: #6E7D74;
+    --cor5: #25332B;
+
+    --fontepadrao: arial, verdana;
+    --fontedestaque: "Bebas Neue", serif;
+
+}
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} 
+/* @font-face {
+    font-family: 'bebas';
+    src: url('fontes/bebas.ttf') format('truetype') */
+
+body{
+    background-color: lightyellow;
+    
+}
+a.externo::after{
+    content: '\1f517';
+}
+
+header{
+    background-image: linear-gradient(to bottom , var(--cor2) 10%, var(--cor5) 90%);
+    padding: 0px 0px 2px 0px;
+    margin: -35px -8px 0px -8px;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.651);
+
+}
+
+header > h1{
+    font-family: var(--fontedestaque);
+    font-weight: 500;
+    font-size: 3em;
+    color: white;
+    padding: 80px 0px 10px 0px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+}
+    
+header > h2{
+    font-family: var(--fontedestaque);
+    font-weight: 100;
+    font-size: 1.5em;
+    max-width: 500px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 0px 10px 20px 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+
+}
+nav{
+    background-color: var(--cor5);
+    padding: 1px 15px 1px 15px;
+    margin: 0px -8px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.205);
+    
+    
+
+}
+nav a{
+    font-family: var(--fontedestaque);
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--cor1);
+    transition-duration: .5s;
+    padding: 10px;
+}
+
+
+nav a:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.432);
+
+}
+nav ul li{
+    display: inline;
+    
+}
+
+.pequena{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+
+main{
+    background-color: rgb(255, 255, 255);
+    margin: 0px 100px 50px 100px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+main img{
+    width: 100%;
+}
+
+main h1{
+    font-family: 'android';
+    font-weight: 300;
+    font-size: 2em;
+    color: var(--cor5);
+}
+main p{
+    font-family: 'arial';
+    font-weight: lighter;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+main strong{
+    color: var(--cor5);
+    padding: 1px 3px;
+    background-color: none;
+    font-weight: bold;
+}
+main h2{
+    font-family: 'android';
+    background-image: linear-gradient(to right, var(--cor3), white);
+    font-weight: 300;
+    color: white;
+    text-indent: 8px;
+    padding: 3px 0px;
+}
+main a {
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: none;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+main a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    padding: 2px 1px;
+
+}
+
+main p div{
+    color: #052708;
+}
+
+div.video{
+    background-color: rgb(255, 255, 255); 
+    margin: 20px -20px;
+    
+    position: relative;
+    padding-bottom: 50%;
+}
+div.video>iframe{
+    position: absolute;
+    left: 7.5%;
+    width:85.5%;
+    height: 100%;
+    box-shadow: 0px 0px 5px;
+}
+
+aside{
+    border-radius: 10px 10px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: none;
+    background-color: var(--cor2);
+    margin: 0px 20px 20px 20px;
+    padding: 10px 20px 0px 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+}
+aside h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -10px -20px 0px -20px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: none;
+    background-color: var(--cor5);
+    color: white;
+}
+aside ul{
+    list-style-type: '\1F5F9\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+
+}
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+    margin: 0px -8px -21px -8px;
+    font-size: 1em;
+    transition-duration: .4s;
+}
+footer strong:hover{
+    color: var(--cor1);
+}
+
+

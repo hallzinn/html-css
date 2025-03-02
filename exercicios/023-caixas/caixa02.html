@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        header > h1{
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            width: 150px;
+            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.300);
+            border-radius: 10px;
+            text-align: left;
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+            text-decoration: none;
+            
+            
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.295);
+            border-radius: 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        aside{
+            text-align: right;
+            font-size: 0.8em;
+        }
+
+        footer{
+            text-align: center;
+            background-color: lightgrey;
+            box-shadow: 0px 0px 10px ;
+            padding: 4px;
+            margin: 10px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        ul{
+            
+            
+        }
+        ul > li {
+            display: none;
+             
+        }
+        ul:hover > li {
+            display: block;
+
+        }
+        li>a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <ul>
+                <h2>MENU</h2>
+                <li><a href="#">ENDEREÇO</a></li>
+                <li><a href="#">CONTATO</a></li>
+                <li><a href="#">COMO CHEGAR</a></li>
+                <li><a href="#">QUEM SOMOS</a></li>
+                <li><a href="#">METAS</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <p>parte principal da pagina <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt temporibus enim quam, nam obcaecati unde in iusto magni ullam. Maiores perferendis voluptatem iusto rerum porro tempore est eum dolor.
+                </p>
+                <aside>informações ou partes menores que fazem parte da parte principal</aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p> Desenvolvido por mim</p>
+
+    </footer>
+  
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            /*
+            medidas absolutas: cm, mm, in(polegadas), px, pt, pc(paica)
+
+            medidas relativas: em(relativa ao tamanha atual da fonte);
+            ex(relativa a altura da letra x);
+            rem(relativa ao tamanho da fonte do root);
+            vw(relativa a largura da viewport);
+            vh(relativa a altura da viewport);
+            %
+
+            preferivel usar px e em.
+            16px geralmente = 1em
+            usar em é mais intererssante pq existem telas que o pixel é maior e menor, e o em se ajusta a isso.
+            */
+            font-size: 16px;
+            font-weight: 100; /* 100 a 900, 100 é o mais fino e 900 é o mais grosso ou negrito */
+            font-style: italic;
+            text-decoration: none; /*sublinhado*/
+        }
+        h1 {
+            /* shorthand font
+            (font-style -> font-weinght -> font-size -> font-family) a ordem importa 
+            resume tudo isso:
+            
+            font-style: normal;
+            font-weight: 900;
+            font-size: 3em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+            a isso:*/
+
+            font: italic bold 4em 'times new roman', serif;
+        }
+        h2 {
+            font: normal 3em 'calibri', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque optio, porro rerum autem quia fugit culpa labore dolor minus quisquam voluptate, ad commodi quam facere illum iure velit? Porro! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt magni dolorum ullam veritatis quidem facilis ab, harum neque. Illo, porro iusto cum delectus ipsam dolorum nisi in quasi ex mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo laudantium deleniti aspernatur deserunt a tempora quia. Est autem ab nobis eius ipsa laboriosam laudantium! Hic nulla fuga voluptatibus quia?
+    </p>
+    <h2>subtitulo do exercicio</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis unde distinctio natus odit, animi laudantium sint ad modi sit, inventore optio. Ipsa consectetur earum inventore cupiditate tempore saepe perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellendus accusamus vitae voluptates officiis assumenda perspiciatis consequuntur accusantium, porro quis ipsum eligendi veniam doloribus officia temporibus rem, reiciendis magnam praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit
+    </p>
+    
+</body>
+</html>
