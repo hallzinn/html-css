@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 50px;
+    /* text-transform: uppercase; funciona para deixar o texto em capslock */
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition-duration: .2s;
+    font-weight: 700;
+}
+
+a:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.487);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section p{
+    padding-bottom: 10vh;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: thistle;
+    color: black;
+    box-shadow: inset 0px 10px 13px rgba(0, 0, 0, 0.459);
+    background-attachment: fixed;
+}
+
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.546);
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+section#img1{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img2{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
