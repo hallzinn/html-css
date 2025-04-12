@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            /* border-collapse: collapse; */
+            width: 600px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .dis{
+            background-color: purple;
+        }
+        .n1{
+            background-color: rgb(156, 79, 156);
+        }
+        .n2{
+            background-color: rgb(221, 191, 221);
+        }
+        .media{
+            background-color: greenyellow;
+        }
+        #tabela{
+            overflow-x: auto; /*  Adiciona barra de rolagem horizontal APENAS NA TABELA quando necessário */
+        }
+        /* A tag colgroup > col funciona apenas para as celulas de grau menor, ou seja, as celulas td da mesma coluna */
+    </style>
+</head>
+<body>
+    <div id="tabela">
+        <table>
+            <colgroup>
+            <col class="area">
+            <col class="dis">
+            <col class="n1">
+            <col class="n2">
+            <col class="media">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Área</th>
+                    <th scope="col" rowspan="2">Disciplinas</th>
+                    <th scope="colgroup" colspan="2">Notas</th>
+                    <th scope="col" rowspan="2">Média</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Exatas</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="4" style="text-align: left;">Média de Exatas</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="2">Humanas</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="4" style="text-align: left;">Média de Humanas</th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
